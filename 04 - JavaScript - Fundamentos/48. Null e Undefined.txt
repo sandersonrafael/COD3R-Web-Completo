@@ -1,0 +1,2 @@
+undefined = valor ainda não atribuído para a variável
+null = ausência de valor

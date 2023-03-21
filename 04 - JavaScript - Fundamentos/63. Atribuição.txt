@@ -1,0 +1,6 @@
+= -> recebe
++= -> recebe a soma, ex: b += 3 -> b = b + 3
+-= -> recebe a subtração, ex: b -= 3 -> b = b-3
+*= -> recebe multiplicação
+/= -> recebe a divisão
+%= -> atribuição modular, ex: b %= 2 -> b = resto(b / 2)

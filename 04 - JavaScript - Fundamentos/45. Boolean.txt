@@ -1,0 +1,27 @@
+Para testar um número é duas negações: !!variavel, ou seja, testa se a variável é "não não verdadeiro"
+
+Valores verdadeiros true e truthy
+
+* todos os números inteiros diferentes de 0
+* string não vazia
+* vetores
+* objetos
+* Infinity
+* Atribuilções verdadeiras -> console.log(!!(let teste = true)) retorna true
+
+
+Valores falsos false e falsy
+
+* valor zero (0)
+* string vazia
+* null
+* NaN
+* undefined
+* Atribuilções falsas -> console.log(!!(let teste = false)) retorna false
+
+EX prático:
+
+let nome = ''
+console.log( nome || 'Desconhecido' )
+
+Retorna -> Desconhecido ; pois nome resulta em false devido ser string vazia

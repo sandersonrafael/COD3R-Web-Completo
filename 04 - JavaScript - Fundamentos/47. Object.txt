@@ -1,0 +1,8 @@
+represetado pelas chaves {} e é formado pela relação key value (chave e valor), do tipo:   { nome: 'Felipe', }
+pode-se criar dinamicamente as informações do objeto, como: objeto.nome = 'Matheus', logo: { nome: 'Matheus', } ou 
+objeto['nome'] = 'Matheus', resultará no mesmo objeto acima.
+
+
+
+
+

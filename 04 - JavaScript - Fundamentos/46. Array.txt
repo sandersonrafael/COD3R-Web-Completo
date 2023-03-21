@@ -1,0 +1,9 @@
+array = [n1, n2, n3, n4, n5,..., nn]
+
+array.push(x1, x2, x3, x4) -> adiciona os valores no array nos próximos índices vazios
+
+array.pop() -> exclui o último valor do array (o último índice)
+
+delete array[n] -> remove o valor do índice n do array
+
+array é do tipo object

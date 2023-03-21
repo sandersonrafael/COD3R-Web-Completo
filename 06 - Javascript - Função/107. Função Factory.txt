@@ -1,0 +1,11 @@
+Função usada com o intuito de criar objetos. Ex:
+
+function criarProduto (nome, preco) {
+	return {
+		nome,
+		preco,
+		desconto: 0.1
+	}
+}
+
+Sempre que essa função for chamada, ela irá criar um novo produto com os valores equivalentes aos parâmetros passados

@@ -1,0 +1,3 @@
+possui escopo global. Pode ser acessado de qualquer local do documento
+
+dentro de uma function, ela só pode ser acessada dentro da própria function.

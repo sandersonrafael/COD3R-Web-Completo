@@ -1,0 +1,11 @@
+Number.isInteger(variável) -> Retorna verdadeiro ou falso se o número é inteiro
+variável.toFixed(n) - > quantidade de casas decimais o número exibe
+Math -> realiza operações matemáticas por meio de códigos: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math
+.charAt(n) -> indica o caractere que está na posição n da string (começa pelo 0 e não por 1)
+.indexOf(valor) -> retorna o índice onde está o valor informado, podendo ser string também
+.substring(n) -> pega a palavra a partir do índice informado. Se string = 'Escola' e n informado for 1, retorna: 'scola'
+.substring(n1, n2) -> vai de n1 até n2 sem incluir n2. Para escola, n1=0 e n2=3, retorna: 'Esc'
+.concat(termo) -> concatena a string ou string dentro da variável
+.replace(n, 'termo') -> substitui a letra de índice 'n' pela string informada no termo
+.split('termoSeparador') -> transforma um conjunto de strings em vetor, ex: 'Mara, Pedro, Júlia'.split(',') = array: ['Mara', 'Pedro', 'Júlia']
+.toString() 

@@ -1,0 +1,5 @@
+variável com underline anterior significa que é uma variável para acessar somente dentro do objeto
+
+const sequencia = {
+_valor: 1,
+}

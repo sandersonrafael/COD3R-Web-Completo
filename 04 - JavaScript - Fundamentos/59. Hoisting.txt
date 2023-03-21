@@ -1,0 +1,3 @@
+Hoisting JavaScript é o deslocamento da declaração de todas as variáveis e funções para o topo do código. A mudança (içamento) ocorre durante a fase de Criação do Contexto de Execução que move as declarações de variáveis e de funções para o início do script.
+
+O hoisting só funciona com o var, não com o let nem com o const

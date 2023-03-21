@@ -1,0 +1,23 @@
+Maneiras de determinar funções antigas e novas:
+
+* Função determinada
+
+function nomeDaFuncao () {
+blocoDaFuncao
+}
+
+* Função anônima / armazenar função em uma variável (ou constante)
+
+const nomeDaFuncao = function () {
+blocoDaFuncao
+}
+
+* Função arrow
+
+const nomeDaFuncao = (parametros) => {
+blocoDaFuncao
+}
+
+* Retorno implícito
+
+const nomeDaFuncao = (parametros) => acaoDaFuncao     ->     Ex: let soma = (a, b) => a + b

@@ -1,0 +1,10 @@
+IIFE - Immediately Invoked Function Expression
+
+É colocada dentro de parêntese e apresenta novo parêntese aberto e fechado no final
+Tudo que for colocado como var, let, const, etc, será definido somente dentro dessa função
+
+(function() {
+	console.log('Será executado na hora!')
+	console.log('Foge do escopo mais abrangente!')
+}
+) ()

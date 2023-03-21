@@ -1,0 +1,35 @@
+São duas outras maneiras de chamar/executar uma função
+ex:
+
+function getPreco (imposto = 0, moeda = 'R$') {
+	return `${moeda} ${this.preco * (1 - this.desc) * (1 + imposto)}` // this é para as variáveis serem usadas fora da função
+}
+
+const produto = {
+	nome: 'Notebook',
+	preco: 4589,
+	desc: 0.15,
+	getPreco		// Relacionado à função criada acima
+}
+
+console.log(produto.getPreco())  // vai imprimir: R$ 3900.65
+
+## método call() ##
+
+const carro = { preco: 49990, desc: 0.20 }
+
+console.log(getPreco.call(carro)) 	// vai imprimir R$ 39992 // OU SEJA: chamou a função getPreco com parâmetros do objeto carro
+
+## método apply() ##
+
+console.log(getPreco.call(carro)) 	// vai imprimir R$ 39992
+
+## diferenças de call e apply ##
+
+## call os parâmetros são dentro do parêntese diretamente, ex:
+
+console.log(getPreco.call(carro, 0.17, '$')) // vai imprimir $ 46790.64; variáveis de "carro" e parâmetros imposto e moeda da sentença
+
+## apply os parâmetros são postos dentro de um array, ex:
+
+console.log(getPreco.apply(carro, [ 0.17, '€'])) // vai imprimir € 46790.64; poderia ser colocado outro objeto, como global ou  window

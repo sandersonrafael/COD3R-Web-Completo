@@ -1,0 +1,23 @@
+## pode ser criado um objeto como classe também: ##
+
+class Pessoa {
+	constructor(nome) {
+		this.nome = nome			-->		this serve para poder referenciar a constante fora 									da função
+	}
+	falar() {
+	console.log(`Meu nome é %{this.nome}`
+	}
+}
+
+const p1 = new Pessoa('João')
+p1.falar() 			--------> 		vai imprimir 'Meu nome é João' 
+
+## outra maneira através das funções arrow, mais fácil e sem necessidade do this ##
+
+const criarPessoa = nome => {
+	return {
+		falar: () => console.log(`Meu nome é ${nome}`)
+	}
+}
+const p2 = criarPessoa('Marcelo')
+p2.falar() 			--------->	vai imprimir 'Meu nome é Marcelo'

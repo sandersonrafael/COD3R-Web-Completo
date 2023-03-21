@@ -1,0 +1,22 @@
+Object.keys(nomeDoObjeto) -> cria array com todas as chaves do object
+
+Object.values(nomeDoObjeto) -> cria array com todos os valores do object
+
+Object.freeze(nomeDoObjeto) -> torna os atributos do objeto inalteráveis
+
+Object.entries(nomeDoObjeto) -> cria matriz no formado [ [ 'chave1', 'valor1'], ['chave2', 'valor2'], ['chave3', 'valor3'] ]
+
+Object.defineProperty(nomeDoObjeto, 'key', { propriedades do objeto, como:
+enumerable: true, 	-> ele aparece na listagem do object
+writable: false,	-> não é possível modificar esse key/value especificamente, similar ao Object.freeze(nomeDoObjeto)
+value: '01/01/2019'	-> atribuiu value da key criada acima
+}    )
+
+Object.assign(nomeDoObjetoASerModificado, nomeDoObjetoASerAssimilado1, nomeDoObjetoASerAssimilado2...), ex:
+
+const inicial = { a:1 }
+const modificacao1 = { b:2 }
+const modificacao2 = { c:3, a:4 }
+const objeto = Object.assign(inicial, modificacao1, modificacao2) -> vai criar um objeto constante que assimila os outros a ele:
+
+objeto é: { a: 4, b: 2, c: 3 }
